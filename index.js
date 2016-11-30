@@ -13,14 +13,9 @@ var server = http.createServer(function onRequest (req, res) {
      req.socket.remoteAddress ||
      req.connection.socket.remoteAddress;
   var geo = geoip.lookup(ip);
-  console.log(ip);
   if(geo){
     if(geo.country !== 'IN'){
-      console.log('ip allowed : '+ip);
       return serve(req, res, finalhandler(req, res));
-    }
-    else{
-      console.log('blocking ip : '+ip);
     }
   }
   res.writeHead(404);

@@ -1,0 +1,1 @@
+node index.js > ~/logs/website.log 2>&1 & echo $! >>~/logs/website.log
