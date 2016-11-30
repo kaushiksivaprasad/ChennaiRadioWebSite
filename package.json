@@ -1,0 +1,24 @@
+{
+  "name": "chennai-radio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chennairadio/chennairadio.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chennairadio/chennairadio.github.io/issues"
+  },
+  "homepage": "https://github.com/chennairadio/chennairadio.github.io#readme",
+  "dependencies": {
+    "finalhandler": "^0.5.1",
+    "geoip-lite": "^1.1.8",
+    "serve-static": "^1.11.1"
+  }
+}
