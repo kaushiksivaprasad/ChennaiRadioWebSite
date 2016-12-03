@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -49,13 +48,13 @@ Style Sheets
 <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#sticktop" data-offset="70">
+<body data-spy="scroll" data-target="#sticktop" data-offset="90">
 <!--=====================================
 Preloader
 ========================================-->
 <div id="jSplash">
 	<figure class="preload_logo">
-		<img src="assets/img/basic/logo.png" alt="" style="height: 130px;"/>
+		<img src="assets/img/basic/logo.png" alt="" style="height: 130px;position=centre"/>
 	</figure>
 </div>
 
@@ -82,7 +81,7 @@ Preloader
               <h4 class="animated bounceInLeft" style="color:white"><i>"Engeyum Eppothum"</i></h4>
               <a class="ScrollTo animated bounceInUp" href="#section_5"><i class="fa fa-angle-down"></i></a>
               <div class="rock_controls controls" style="padding-top: 15px;padding-left: 15px;">
-                <div class="fa fa-play jp-play" style="display: block;" onclick="playMusic()"></div>
+                <div class="fa fa-play jp-play" style="display: block";position="center" onclick="playMusic()"></div>
                 <div class="fa fa-pause jp-pause" style="display: none;" onclick="stopMusic()"></div>
               </div>
            </div>
@@ -302,7 +301,7 @@ Preloader
               <div class="col-xs-12 animatedParent ">
                 <h1 class="animated fadeInDown">MANKATHA!</h1>
                 <h3 class="animated bounceInRight">Come play with us!</h3>
-                <a href="javascript:return false" class="btn">Saturday 3pm to 5pm</a>
+                <a onclick="window.open('https://www.facebook.com/ChennaiRadio/photos/a.240634239653840.1073741828.240301249687139/331971010520162/?type=3&theater')" class="btn">Saturday 3pm to 5pm</a>
               </div>
               <!--column-->
             </div>
@@ -1102,17 +1101,27 @@ Preloader
               Contact Form
               ===========================-->          
             <div class="contact_Us">
-       		   <!--<div class="tabs-wrap tabs-wrap-active clearfix">-->
-                    <!--<ul class="tabs">-->
-                        <!--<li class="tab-link tab-link1 active" data-tab="tab1">-->
-                            <!--<span>Get Social</span>-->
-                        <!--</li>-->
-                        <!--<li class="tab-link tab-link2" data-tab="tab2">-->
-                            <!--<span>Message Us</span>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>&lt;!&ndash;tab wrapper&ndash;&gt;-->
-
+       		   <div class="tabs-wrap tabs-wrap-active clearfix">
+                    <ul class="tabs">
+                        <li class="tab-link tab-link1 active" data-tab="tab1">
+                           <span>Get Social</span>
+                        </li>
+                        <li class="tab-link tab-link2" data-tab="tab2">
+                            <span>Message Us</span>
+                        </li>
+                    </ul>
+                </div>
+				<div id="tab1" class="tab-content active">   
+                    <ul class="channels_list row animatedParent " data-sequence="400">
+                      <li class="col-xs-12 col-sm-4  animated fadeInLeft" data-id="1"> <a onclick="window.open('https://www.facebook.com/ChennaiRadio')" ><i class="fa fa-facebook-square"></i>Facebook</a></li>
+					  <li class="col-xs-12 col-sm-4 animated fadeInLeftShort" data-id="2"> <a onclick="window.open('https://itunes.apple.com/ca/app/chennai-radio/id1179949142?mt=8')"><i class="fa fa-apple"></i>App Store</a></li>
+                      <li class="col-xs-12 col-sm-4 animated fadeInLeft" data-id="3"><a onclick="window.open('https://play.google.com/store/apps/details?id=com.chennairadio.mobapp')"><i class="fa fa-android"></i>Play Store</a></li>
+                      <li class="col-xs-12 col-sm-4  animated fadeInLeft" data-id="4"> <a href="#"><i class="fa fa-youtube"></i>youtube</a></li>
+                      <!--<li class="col-xs-12 col-sm-4 animated fadeInLeft" data-id="4"> <a href="#"><i class="fa fa-instagram"></i>poison Instagram</a></li>-->
+                      
+                      <!--<li class="col-xs-12 col-sm-4  animated fadeInLeft" data-id="6"> <a href="#"><i class="fa fa-pinterest"></i>poison pinterest</a></li>-->
+                    </ul>
+                </div>
                 <div id="tab2" class="tab-content animatedParent">  
                     <div class="contactFormWrapper ">
                         <form id="contactform" action="assets/php/submit.php" method="post">
