@@ -49,6 +49,14 @@ Style Sheets
 </head>
 
 <body data-spy="scroll" data-target="#sticktop" data-offset="90">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--=====================================
 Preloader
 ========================================-->
@@ -84,6 +92,7 @@ Preloader
                 <div class="fa fa-play jp-play" style="display: block";position="center" onclick="playMusic()"></div>
                 <div class="fa fa-pause jp-pause" style="display: none;" onclick="stopMusic()"></div>
               </div>
+			 <div class="fb-like" data-href="https://www.facebook.com/ChennaiRadio/" data-width="100px" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
            </div>
             <audio src="" style="display: none" autoplay id="audioPlay"></audio>
           </div>
