@@ -653,6 +653,7 @@ a.playlist_expander{
 /*==========================
 6-parallax
 ==========================*/
+
 .parallax {
 	overflow:hidden;
 	clear:both;
@@ -668,7 +669,7 @@ a.playlist_expander{
 	margin-bottom: 42px;
 	padding: 0;
 }
-
+	
 .parallax_inner {
 	position: relative;
 	padding-top: 150px;
